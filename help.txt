@@ -1,0 +1,51 @@
+USAGE:  lboi [PARAM(S)]
+        lboi [OPTIONS] [PARAM(S)]
+
+First of, it is important to know that lzyboi utilizes a very simple, but crucial data
+management alrgorithm that will be required for you to initialise whenever executing the
+script for the first time since system reboot. Don't get intimidated by the prompt.
+
+The reason for said data management is, among others, but most importantly, to store
+information given by you, the user, that is critical to the automatic alteration of
+snippets, which is the main functionality of this script.
+More on that in the lower sections of this document.
+
+
+LZYBOI MANUAL - Optionless calls:
+  lboi [PARAM(S)] : This is the main usage of lzyboi.
+
+  [TARGET MANAGEMENT]
+  lboi #.#.#.# : Passing an IP address as a parameter changes the current IP address
+	         that lzyboi will use to alter snippets.
+
+  lboi (0 - 65535) : Passing an integer between 0 and 65536 changes the current port that
+		     lzyboi will use to alter snippets.
+
+  lboi url<?> : url=<insert URL> : This changes the entire URL, excepted "http(s)://".
+  	    	url+<insert string> : This concatenates a string to the current URL.
+	    	url-<insert number> : This substracts a specified amount of directories ("/") from the URL.
+		urls : This alternates the secure flag for the http protocol.
+		       (ex.: http://x.com/ <-> https://x.com/)
+		url/ : This resets the path entirely, returning to the root. (NOT IMPLEMENTED)
+		       (ex.: http://x.com/y/z/ -> http://x.com/)
+
+		Note that, in an attempt to reduce the risk of redundancy, this script will never require
+		you to manually write down "http(s)://" at the beginning of the target URL.
+
+  [BROWSING TOOL SNIPPETS]
+  lboi <tool> : Passing a tool name (nmap for example) as a parameter displays a list of snippets 
+		for the corresponding tool with fzf. You may then select the desired snippet and the
+		script will prefill the command line, allowing you to edit it and execute it manually.
+
+		Following a tool name with a number will skip the selection step. (NOT IMPLEMENTED)
+
+
+LZYBOI MANUAL - Option-prefixed calls:
+  lboi [OPTION] [PARAM(S)] : This is the advanced usage of lzyboi.
+
+  [DATA SYSTEM CONTROLS]
+  lboi -d [PARAM] : The -d flag has dedicated parameters for advanced control over
+					  lzyboi's data management system.
+
+  [SHOW TARGET INFORMATION]
+  lboi -t [PARAM] : 
