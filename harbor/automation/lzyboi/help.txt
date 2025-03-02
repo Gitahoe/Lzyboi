@@ -2,7 +2,7 @@ USAGE:  lboi [PARAM(S)]
         lboi [OPTIONS] [PARAM(S)]
 
 First of, it is important to know that lzyboi utilizes a very simple, but crucial data
-management alrgorithm that will be required for you to initialise whenever executing the
+management alrgorithm that will be required for you to initialize whenever executing the
 script for the first time since system reboot. Don't get intimidated by the prompt.
 
 The reason for said data management is, among others, but most importantly, to store
