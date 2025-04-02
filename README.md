@@ -6,8 +6,10 @@ NOTE: Main script is located at /harbor/automation/lboi.sh. Explained in lower s
 ## Description
 
 This tool serves a purpose similar to the Metasploit workspace:
-- It allows users to create a context-specific workspace to augment efficiency while doing offensive security.
-- Within the workspace, the user may append data to variables such as T_IP, T_PORT, T_URL and more ("T" meaning "Target").
+- It allows users to create a context-specific workspace to augment efficiency while doing
+  offensive security.
+- Within the workspace, the user may append data to variables such as T_IP, T_PORT, T_URL and more
+  ("T" meaning "Target").
 - Functionnalities within the script use a workspace's variables to automate many things, such as completing a selection of snippets for offsec tools.
 - Moreover, the script is being written with the intent of making it very easy to edit files that contain snippets and others.
 
