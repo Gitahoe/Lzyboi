@@ -1,0 +1,8 @@
+Esoteric programming languages:
+- Brainfuck
+- Malbolge
+- Chef
+- Shakespeare
+- PIET
+- LOLCODE (less fun)
+- Emojicode

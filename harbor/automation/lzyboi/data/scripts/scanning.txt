@@ -1,0 +1,37 @@
+echo "1. Nmap"
+
+
+case 1 -> [PATH_TO_NMAP.sh]
+
+
+Nmap
+Nessus
+OpenVAS
+Nikto
+Masscan
+WPScan
+(that one internal scanner)
+
+
+# SCANNERS
+nmap=nmap -sC -sV -oA scan_results
+wpscan=wpscan --url http://example.com --enumerate u
+
+# PROTOCOLS
+ftp=ftp user@host
+ssh=ssh user@host
+
+# BRUTEFORCERS
+john2ripper=john --wordlist=/path/to/wordlist --format=raw-md5 hash.txt
+hydra=hydra ...
+# BUSTERS
+gobuster=gobuster dir -u http://example.com -w /path/to/wordlist.txt
+feroxbuster=feroxbuster -u http://example.com -w /path/to/wordlist.txt
+arjun=python3 arjun.py -u http://example.com
+ffuf=ffuf -u http://example.com/FUZZ -w /path/to/wordlist.txt
+
+# MISC
+ffmpeg=ffmpeg -i input.mp4 -c:v libx264 -crf 20 output.mp4
+(efficient hash tools)
+(steganography tools)
+wget

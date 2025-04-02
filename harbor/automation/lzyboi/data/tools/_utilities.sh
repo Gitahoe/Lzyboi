@@ -1,11 +1,12 @@
 #!/bin/bash
 tools_category="_wifi.sh"
 tool_list=$(cat <<EOF
-airbase-ng
-aircrack-ng
-airodump-ng
-mdk3
-wavemon
+netcat
+host
+whatweb
+whois
+wlan
+
 _settings_
 EOF
 )

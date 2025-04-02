@@ -1,0 +1,7 @@
+# CROSS-TERMINAL
+# Upgrade shell on corresponding terminal
+# Install internal scanner | Execute internal scan on corresponding terminal
+
+# SAME TEMINAL
+# Establish reverse shell
+# 

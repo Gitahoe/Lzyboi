@@ -46,7 +46,7 @@ while getopts ":d:c:w:m:h:s" opt; do
     s) # Display settings.sh
  	 echo "$T_HOST"; echo "$T_URL"; echo "$T_CREDS"
 	 ;;
-    h) cat "$SCRIPT_DIR/help.txt" ;;
+    h) cat "$SCRIPT_DIR/README.txt" ;;
 #     \?) echo "Invalid option: $opt" ;;
   esac
   exit 0;
