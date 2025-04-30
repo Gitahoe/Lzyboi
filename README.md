@@ -1,4 +1,4 @@
-# Lzyboi - Linux automation tool for pentest
+# Lzyboi - Linux automation tool for offensive security
 
 NOTE: Main script is located at /harbor/automation/lboi.sh. Explained in lower sections.
 
